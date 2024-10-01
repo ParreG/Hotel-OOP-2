@@ -12,7 +12,10 @@ namespace Hotel_OOP_2
         string ConsultingFirm;
         string Expertis;
 
-        public Consultant(string name, int age, string empoyeeId, DateTime startDate, decimal salary, string department, Decimal hourlyRate, string consultingFirm, string expertis) : base(name, age, empoyeeId, startDate, salary)
+        public Consultant(string name, int age, string empoyeeId, DateTime startDate, decimal salary, string department, Decimal hourlyRate,
+            string consultingFirm, string expertis, string phoneNumber, string email, string adress) :
+            base(name, age, empoyeeId, startDate, salary, phoneNumber, email, adress)
+        
         {
             HourlyRate = hourlyRate;
             ConsultingFirm = consultingFirm;

@@ -8,7 +8,19 @@ namespace Hotel_OOP_2
 {
     class Housekeeper : Person
     {
-        public Housekeeper(string name, int age, string empoyeeId, DateTime startDate, decimal salary, string department, string jobTitle) : base(name, age, empoyeeId, startDate, salary)
+        public enum CleaningSpeed
+        {
+            Fast,
+            Average,
+            Thorough
+        }
+        CleaningSpeed cleaningSpeed;
+        List<string> SpecialtyAreas;
+        Dictionary<string, int> SuppliesInventory;
+
+        public Housekeeper(string name, int age, string empoyeeId, DateTime startDate, decimal salary, string department, string jobTitle, string phoneNumber, string email, string adress) :
+            base(name, age, empoyeeId, startDate, salary, phoneNumber, email, adress)
+        
         {
 
         }
